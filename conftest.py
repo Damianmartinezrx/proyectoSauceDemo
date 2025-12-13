@@ -13,6 +13,7 @@ target.mkdir(parents=True, exist_ok=True)
 def driver():
     options = Options()
     options.add_argument("--incognito")
+    #Comentar estas lineas para ver el proceso de los test
     options.add_argument("--no-sandbox") # github
     options.add_argument("--disable-gpu") # github
     options.add_argument("--window-size=1920,1080") # github

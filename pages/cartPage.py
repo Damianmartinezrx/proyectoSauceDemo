@@ -8,6 +8,7 @@ class cart_Page:
 
     _CART_ITEMS = (By.CLASS_NAME, "cart_item")
     _CART_ITEMS_NAME = (By.CLASS_NAME, "inventory_item_name")
+    
 
     def __init__(self, driver):
         self.driver = driver
