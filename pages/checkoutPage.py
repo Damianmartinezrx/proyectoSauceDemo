@@ -12,7 +12,7 @@ class checkout_page:
 
     _NOMBRE = "Damian"
     _APELLIDO = "Martinez"
-    _POSTAL = "B1744"
+    _CODIGO = "B1744"
 
     def __init__(self, driver):
         self.driver = driver
@@ -30,10 +30,10 @@ class checkout_page:
         apellido.send_keys(_APELLIDO)
         return self
     
-    def ingresar_postal(self,_POSTAL):
+    def ingresar_postal(self,_CODIGO):
         postal = self.wait.until(EC.visibility_of_element_located(self._POSTAL))
         postal.clear()
-        postal.send_keys(_POSTAL)
+        postal.send_keys(_CODIGO) 
         return self
 
     
@@ -41,6 +41,16 @@ class checkout_page:
         self.ingresar_nombre(_NOMBRE)
         self.ingresar_apellido(_APELLIDO)
         self.ingresar_postal(_POSTAL)
+        return self
+    
+    def boton_continue(self):
+        boton_continue = self.wait.until(EC.element_to_be_clickable((By.ID, "continue")))
+        boton_continue.click()  
+        return self
+    
+    def boton_finish(self):
+        boton_finish = self.wait.until(EC.element_to_be_clickable((By.ID, "finish")))
+        boton_finish.click()  
         return self
     
 

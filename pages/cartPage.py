@@ -21,3 +21,8 @@ class cart_Page:
     def obtener_nombres_items_carrito(self):
         nombre_producto = self.wait.until(EC.visibility_of_element_located(self._CART_ITEMS_NAME))
         return nombre_producto.text
+    
+    def boton_checkout(self):
+        boton_checkout = self.wait.until(EC.element_to_be_clickable((By.ID, "checkout")))
+        boton_checkout.click()  
+        return self

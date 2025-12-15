@@ -6,12 +6,13 @@ import pytest
 from pages.inventoryPage import inventory_page  
 from pages.cartPage import cart_Page
 from utils.logger import logger
-
+from pages.checkoutPage import checkout_page
+import time
 
 from pages.loginPage import login_page as login
 
 @pytest.mark.parametrize("usuario, password, debe_funcionar", leer_csv_login("datos/datos_usuarioValido.csv"))
-def test_cart(login_page, usuario, password, debe_funcionar):
+def test_checkout(login_page, usuario, password, debe_funcionar):
     try:
         driver = login_page
         login(driver).login(usuario, password)
@@ -23,18 +24,23 @@ def test_cart(login_page, usuario, password, debe_funcionar):
         #navegar al carrito de compras
         inventory.abrir_carrito()
 
-        #validar que el producto agregado este en el carrito
-        cartPage = cart_Page(driver)
+        inventory = cart_Page(driver)
+        inventory.boton_checkout()
 
-        productos_carrito = cartPage.obtener_items_carrito()
-        logger.info("Validando que el carrito contenga un producto")
-        assert len(productos_carrito) == 1, "El carrito debe contener un producto."
+        logger.info("Test de pagina checkout")
+        checkout = checkout_page(driver)    
+        checkout.completar_checkout("Damian","Martinez","B1744")
+        checkout.boton_continue()
+        checkout.boton_finish()
+        
+        logger.info("Test de checkout completado exitosamente.")
+        texto = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "complete-header"))).text
+        assert texto == "Thank you for your order!", "El mensaje de confirmacion no es correcto."
+        
 
-        logger.info("Test de carrito de compras completado exitosamente.")
+
         
 
     except Exception as e:
-        print(f"Error en test_carrito_compras : {e}")
+        print(f"Error en test_checkout : {e}")
         raise
-
-    

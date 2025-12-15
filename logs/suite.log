@@ -163,3 +163,27 @@
 2025-12-12 12:07:50 INFO TalentoTech: El login fue exitoso
 2025-12-12 14:26:50 INFO TalentoTech: Validando que el carrito contenga un producto
 2025-12-12 14:29:52 INFO TalentoTech: Validando que el carrito contenga un producto
+2025-12-15 10:45:30 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:46:02 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:46:47 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:48:01 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:48:37 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:58:28 INFO TalentoTech: Test de pagina checkout
+2025-12-15 10:58:29 INFO TalentoTech: Test de checkout completado exitosamente.
+2025-12-15 11:16:07 INFO TalentoTech: Test de pagina checkout
+2025-12-15 11:16:07 INFO TalentoTech: Test de checkout completado exitosamente.
+2025-12-15 11:16:43 INFO TalentoTech: Test de pagina checkout
+2025-12-15 11:16:43 INFO TalentoTech: Test de checkout completado exitosamente.
+2025-12-15 11:17:36 INFO TalentoTech: Validando que el carrito contenga un producto
+2025-12-15 11:17:36 INFO TalentoTech: Test de carrito de compras completado exitosamente.
+2025-12-15 11:17:40 INFO TalentoTech: Validando que el producto Sauce Labs Backpack este en el carrito de compras
+2025-12-15 11:18:01 INFO TalentoTech: Validando que el producto Sauce Labs Bike Light este en el carrito de compras
+2025-12-15 11:18:21 INFO TalentoTech: Validando que el producto Sauce Labs Bolt T-Shirt este en el carrito de compras
+2025-12-15 11:18:42 INFO TalentoTech: Test de pagina checkout
+2025-12-15 11:18:42 INFO TalentoTech: Test de checkout completado exitosamente.
+2025-12-15 11:18:47 INFO TalentoTech: Validando el titulo de la pagina y la presencia de productos en el inventario
+2025-12-15 11:18:47 INFO TalentoTech: Validando que el carrito de compras esté vacío al iniciar sesión
+2025-12-15 11:18:57 INFO TalentoTech: Validando que el carrito de compras tenga un producto después de agregar un ítem
+2025-12-15 11:19:39 INFO TalentoTech: completando con los datos de usario
+2025-12-15 11:19:39 INFO TalentoTech: Verificando que el login fue exitoso
+2025-12-15 11:19:39 INFO TalentoTech: El login fue exitoso
