@@ -224,3 +224,22 @@
 2025-12-15 14:14:24 INFO TalentoTech: completando con los datos de usario
 2025-12-15 14:14:25 INFO TalentoTech: Verificando que el login fue exitoso
 2025-12-15 14:14:25 INFO TalentoTech: El login fue exitoso
+2025-12-15 14:23:53 INFO TalentoTech: Validando que el carrito contenga un producto
+2025-12-15 14:23:53 INFO TalentoTech: Test de carrito de compras completado exitosamente.
+2025-12-15 14:23:57 INFO TalentoTech: Validando que el producto Sauce Labs Backpack este en el carrito de compras
+2025-12-15 14:24:17 INFO TalentoTech: Validando que el producto Sauce Labs Bike Light este en el carrito de compras
+2025-12-15 14:24:38 INFO TalentoTech: Validando que el producto Sauce Labs Bolt T-Shirt este en el carrito de compras
+2025-12-15 14:24:58 INFO TalentoTech: Test de pagina checkout
+2025-12-15 14:24:58 INFO TalentoTech: Test de checkout campos vacios.
+2025-12-15 14:25:03 INFO TalentoTech: Test de pagina checkout
+2025-12-15 14:25:03 INFO TalentoTech: Test de checkout campos vacios.
+2025-12-15 14:25:07 INFO TalentoTech: Test de pagina checkout
+2025-12-15 14:25:07 INFO TalentoTech: Test de checkout campos vacios.
+2025-12-15 14:25:11 INFO TalentoTech: Test de pagina checkout
+2025-12-15 14:25:12 INFO TalentoTech: Test de checkout completado exitosamente.
+2025-12-15 14:25:16 INFO TalentoTech: Validando el titulo de la pagina y la presencia de productos en el inventario
+2025-12-15 14:25:16 INFO TalentoTech: Validando que el carrito de compras esté vacío al iniciar sesión
+2025-12-15 14:25:26 INFO TalentoTech: Validando que el carrito de compras tenga un producto después de agregar un ítem
+2025-12-15 14:26:08 INFO TalentoTech: completando con los datos de usario
+2025-12-15 14:26:08 INFO TalentoTech: Verificando que el login fue exitoso
+2025-12-15 14:26:08 INFO TalentoTech: El login fue exitoso
